@@ -1,21 +1,5 @@
-/*!
-  * Bootstrap v5.3.3 (https://getbootstrap.com/)
-  * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-  */
+
 import * as Popper from '@popperjs/core';
-
-/**
- * --------------------------------------------------------------------------
- * Bootstrap dom/data.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
-
-/**
- * Constants
- */
-
 const elementMap = new Map();
 const Data = {
   set(element, key, instance) {
@@ -1073,17 +1057,6 @@ class Swipe extends Config {
   }
 }
 
-/**
- * --------------------------------------------------------------------------
- * Bootstrap carousel.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
-
-
-/**
- * Constants
- */
 
 const NAME$c = 'carousel';
 const DATA_KEY$8 = 'bs.carousel';
@@ -1446,17 +1419,6 @@ EventHandler.on(window, EVENT_LOAD_DATA_API$3, () => {
 
 defineJQueryPlugin(Carousel);
 
-/**
- * --------------------------------------------------------------------------
- * Bootstrap collapse.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
-
-
-/**
- * Constants
- */
 
 const NAME$b = 'collapse';
 const DATA_KEY$7 = 'bs.collapse';
@@ -1680,17 +1642,6 @@ EventHandler.on(document, EVENT_CLICK_DATA_API$4, SELECTOR_DATA_TOGGLE$4, functi
 
 defineJQueryPlugin(Collapse);
 
-/**
- * --------------------------------------------------------------------------
- * Bootstrap dropdown.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
-
-
-/**
- * Constants
- */
 
 const NAME$a = 'dropdown';
 const DATA_KEY$6 = 'bs.dropdown';
@@ -2270,17 +2221,6 @@ class FocusTrap extends Config {
   }
 }
 
-/**
- * --------------------------------------------------------------------------
- * Bootstrap util/scrollBar.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
-
-
-/**
- * Constants
- */
 
 const SELECTOR_FIXED_CONTENT = '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top';
 const SELECTOR_STICKY_CONTENT = '.sticky-top';
@@ -2367,18 +2307,6 @@ class ScrollBarHelper {
     }
   }
 }
-
-/**
- * --------------------------------------------------------------------------
- * Bootstrap modal.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
-
-
-/**
- * Constants
- */
 
 const NAME$7 = 'modal';
 const DATA_KEY$4 = 'bs.modal';
@@ -2673,18 +2601,6 @@ enableDismissTrigger(Modal);
 
 defineJQueryPlugin(Modal);
 
-/**
- * --------------------------------------------------------------------------
- * Bootstrap offcanvas.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
-
-
-/**
- * Constants
- */
-
 const NAME$6 = 'offcanvas';
 const DATA_KEY$3 = 'bs.offcanvas';
 const EVENT_KEY$3 = `.${DATA_KEY$3}`;
@@ -2904,12 +2820,6 @@ enableDismissTrigger(Offcanvas);
 
 defineJQueryPlugin(Offcanvas);
 
-/**
- * --------------------------------------------------------------------------
- * Bootstrap util/sanitizer.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * --------------------------------------------------------------------------
- */
 
 // js-docs-start allow-list
 const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i;
