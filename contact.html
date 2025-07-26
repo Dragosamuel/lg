@@ -20,7 +20,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link rel="stylesheet" href="subscribe.php">
-
+  
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -75,130 +75,311 @@
   </header>
 
   <main class="main">
-
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>The choir</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <span class="subtitle">Get in Touch</span>
+          <h2>Contact Us</h2>
+          <div class="section-divider">
+            <span class="divider-icon"><i class="fas fa-music"></i></span>
+          </div>
+          <p class="lead">We'd love to hear from you. Reach out to us for any inquiries.</p>
+        </div>
+  
         <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>lemon gaba, Juba, South Sudan</p>
+          <!-- Contact Information -->
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="contact-info-card">
+              <div class="contact-info-header">
+                <h3>Contact Information</h3>
+                <p>Get in touch with us through any of these means</p>
+              </div>
+              
+              <div class="contact-info-body">
+                <div class="info-item">
+                  <i class="fas fa-location-dot"></i>
+                  <div>
+                    <h4>Location</h4>
+                    <p>Lemon Gaba, Juba, South Sudan</p>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+211-924742100/+211-922597297</p>
+  
+                <div class="info-item">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <h4>Phone</h4>
+                    <p>+211-924742100</p>
+                    <p>+211-922597297</p>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>lemogaba@gmial.com</p>
+  
+                <div class="info-item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <h4>Email</h4>
+                    <p>lemogaba@gmail.com</p>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/@0,0,4z?hl=en-GB&entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"></iframe>
+              </div>
+  
+              <div class="contact-social">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                  <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-7">
-            <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+  
+          <!-- Contact Form -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-form-card">
+              <form id="contactForm" class="contact-form">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" class="form-control" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" class="form-control" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="subject" class="form-control" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" class="form-control" rows="6" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn-submit">
+                      <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                  </div>
                 </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-                <main class="main">
-                  <!-- Other sections like Contact -->
-                  <section id="subscribe" class="subscribe section">
-                    <!-- Subscription form code here -->
-                  </section>
-                </main>
-                
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+              </form>
+            </div>
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-      
-          <div class="copyright text-center ">
-            <!-- Support Section -->
-            <section class="support-section">
-              
-              <h3>Support Our Choir</h3>
-              <p>Your donations help us continue spreading faith through music. Consider making a contribution to support our ministry.</p>
-              <a href="donate.html" class="btn-support">Support Us</a>
-              </section>
-            <p>Follow us on:
-          <p>Email:lemogaba@gmial.com | Phone: +211-924742100/+211-922597297</p>
-          <p><Address:Lemongaba>Lemongaba</Address:Lemongaba>, Juba, South Sudan</p>
-          <p>&copy; 2024 sammiepro. All rights reserved.</p>
+    </section>
+  
+    <!-- Music Learning Platform Section -->
+    <section id="learning" class="learning-section bg-light">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <span class="subtitle">Join Our Classes</span>
+          <h2>Music Learning Platform</h2>
+          <div class="section-divider">
+            <span class="divider-icon"><i class="fas fa-graduation-cap"></i></span>
           </div>
-          <div class="social-links d-flex justify-content-center">
-            <a href="https://www.youtube.com/@LemongabaSDAchurchchoir"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.facebook.com/search/top?q=lemon%20gaba%20sda%20church%20choir"><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@lemongabasdachoir225/video/7332359432602422533?is_from_webapp=1&sender_device=pc&web_id=7434062887067534853"><i class="bi bi-tiktok"></i></a>
+          <p class="lead">Develop your musical talents with our professional instructors</p>
+        </div>
+  
+        <div class="row gy-4">
+          <!-- Course Cards -->
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="course-card">
+              <div class="course-image">
+                <img src="assets/img/vocal-training.jpg" alt="Vocal Training">
+                <div class="course-badge">Beginner Friendly</div>
+              </div>
+              <div class="course-content">
+                <h3>Vocal Training</h3>
+                <p>Master the fundamentals of vocal techniques and harmony.</p>
+                <ul class="course-features">
+                  <li><i class="fas fa-clock"></i> 12 Weeks</li>
+                  <li><i class="fas fa-book"></i> 24 Lessons</li>
+                  <li><i class="fas fa-user-group"></i> Limited Seats</li>
+                </ul>
+                <button class="btn-enroll" onclick="openEnrollModal('Vocal Training')">
+                  Enroll Now
+                </button>
+              </div>
+            </div>
           </div>
-      <div class="credits">
-        Designed by <a>sammiepro</a>
+  
+          <!-- Add more course cards as needed -->
+        </div>
+      </div>
+    </section>
+  
+    <!-- Enrollment Modal -->
+    <div id="enrollModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Enroll in <span id="courseName"></span></h2>
+        <form id="enrollmentForm" class="enrollment-form">
+          <div class="form-group">
+            <label for="enrollName">Full Name</label>
+            <input type="text" id="enrollName" required>
+          </div>
+          <div class="form-group">
+            <label for="enrollEmail">Email Address</label>
+            <input type="email" id="enrollEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="enrollPhone">Phone Number</label>
+            <input type="tel" id="enrollPhone" required>
+          </div>
+          <div class="form-group">
+            <label for="experience">Musical Experience</label>
+            <select id="experience" required>
+              <option value="">Select your level</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Notes</label>
+            <textarea id="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            Submit Application
+          </button>
+        </form>
       </div>
     </div>
+  
+    <!-- Google Map -->
+    <section id="map" class="map-section">
+      <div class="container-fluid p-0">
+        <div class="google-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE"
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 
+ 
+  <footer id="footer" class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- About Column -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Lemon Gaba SDA Choir</h3>
+              <p class="footer-description">
+                Spreading the gospel through music and touching lives with divine melodies since 2018.
+              </p>
+              <div class="footer-contact">
+                <p>
+                  <i class="fas fa-location-dot"></i>
+                  Lemongaba, Juba, South Sudan
+                </p>
+                <p>
+                  <i class="fas fa-phone"></i>
+                  <span>+211-924742100</span>
+                  <span class="divider">|</span>
+                  <span>+211-922597297</span>
+                </p>
+                <p>
+                  <i class="fas fa-envelope"></i>
+                  lemogaba@gmail.com
+                </p>
+              </div>
+              <div class="social-links">
+                <a href="https://www.youtube.com/@LemongabaSDAchurchchoir" class="youtube">
+                  <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/search/top?q=lemon%20gaba%20sda%20church%20choir" class="facebook">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@lemongabasdachoir225" class="tiktok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Quick Links Column -->
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="fas fa-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="about.html">About Us</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="services.html">Services</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="portfolio.html">Portfolio</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+  
+          <!-- Services Column -->
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Worship Ministry</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Music Education</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Event Performances</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Community Outreach</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Digital Ministry</a></li>
+            </ul>
+          </div>
+  
+          <!-- Support Column -->
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Support Our Ministry</h4>
+            <p>Your generous donations help us continue spreading faith through music and reaching more souls for Christ.</p>
+            <div class="support-buttons">
+              <a href="donate.html" class="btn-donate">
+                <i class="fas fa-heart"></i> Make a Donation
+              </a>
+            </div>
+            <div class="newsletter-form">
+              <h5>Stay Updated</h5>
+              <p>Subscribe to our newsletter for latest updates</p>
+              <form action="" method="post">
+                <input type="email" name="email" placeholder="Your email address">
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="copyright">
+              &copy; <span id="year">2024</span> <strong>Lemon Gaba SDA Choir</strong>. All Rights Reserved
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="credits">
+              Designed with <i class="fas fa-heart"></i> by <a href="#">sammiepro</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Scroll Top -->
