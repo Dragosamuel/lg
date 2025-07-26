@@ -178,3 +178,112 @@
   });
 
 })();
+// Form Validation and Submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Validate form
+  if (validateForm()) {
+    // Show loading state
+    const submitBtn = this.querySelector('button[type="submit"]');
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    submitBtn.disabled = true;
+    
+    // Simulate form submission (replace with actual API call)
+    setTimeout(() => {
+      showSuccessMessage();
+      this.reset();
+      submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      submitBtn.disabled = false;
+    }, 2000);
+  }
+});
+
+function validateForm() {
+  // Add your validation logic here
+  return true;
+}
+
+function showSuccessMessage() {
+  const alert = document.createElement('div');
+  alert.className = 'alert alert-success';
+  alert.innerHTML = `
+    <i class="fas fa-check-circle"></i>
+    Thank you! Your message has been sent successfully.
+  `;
+  
+  document.querySelector('.contact-form').prepend(alert);
+  
+  setTimeout(() => {
+    alert.remove();
+  }, 5000);
+}
+
+// Enrollment Modal
+function openEnrollModal(courseName) {
+  const modal = document.getElementById('enrollModal');
+  document.getElementById('courseName').textContent = courseName;
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+// Close modal when clicking the close button or outside
+document.querySelector('.close-modal').onclick = closeModal;
+window.onclick = function(e) {
+  if (e.target.className === 'modal') {
+    closeModal();
+  }
+}
+
+function closeModal() {
+  document.getElementById('enrollModal').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Enrollment Form Submission
+document.getElementById('enrollmentForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Show loading state
+  const submitBtn = this.querySelector('button[type="submit"]');
+  submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+  submitBtn.disabled = true;
+  
+  // Simulate form submission (replace with actual API call)
+  setTimeout(() => {
+    showEnrollmentSuccess();
+    this.reset();
+    closeModal();
+    submitBtn.innerHTML = 'Submit Application';
+    submitBtn.disabled = false;
+  }, 2000);
+});
+
+function showEnrollmentSuccess() {
+  const toast = document.createElement('div');
+  toast.className = 'toast-notification';
+  toast.innerHTML = `
+    <i class="fas fa-check-circle"></i>
+    Your enrollment application has been submitted successfully!
+  `;
+  
+  document.body.appendChild(toast);
+  
+  setTimeout(() => {
+    toast.remove();
+  }, 5000);
+}
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
